@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guessing Game</title>
+</head>
+<body>
+    <h1>Welcome to the Guessing Game!</h1>
+    <form action="/guess" method="post">
+        <input type="hidden" name="secret_number" value="{{ secret_number }}">
+        <input type="number" name="guess" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
